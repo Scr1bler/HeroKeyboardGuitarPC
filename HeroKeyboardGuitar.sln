@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeroKeyboardGuitar", "HeroKeyboardGuitar\HeroKeyboardGuitar.csproj", "{74104662-FFF7-46DD-BBBA-B634A341D389}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1E1AF2D8-49CF-4D0D-9608-E98D8195C446} = {1E1AF2D8-49CF-4D0D-9608-E98D8195C446}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AudioAnalyzing", "AudioAnalyzing\AudioAnalyzing.csproj", "{1E1AF2D8-49CF-4D0D-9608-E98D8195C446}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74104662-FFF7-46DD-BBBA-B634A341D389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74104662-FFF7-46DD-BBBA-B634A341D389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74104662-FFF7-46DD-BBBA-B634A341D389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74104662-FFF7-46DD-BBBA-B634A341D389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E1AF2D8-49CF-4D0D-9608-E98D8195C446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E1AF2D8-49CF-4D0D-9608-E98D8195C446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E1AF2D8-49CF-4D0D-9608-E98D8195C446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E1AF2D8-49CF-4D0D-9608-E98D8195C446}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D87AF5F-1D28-4FC4-B473-BB71CD809DC0}
+	EndGlobalSection
+EndGlobal
