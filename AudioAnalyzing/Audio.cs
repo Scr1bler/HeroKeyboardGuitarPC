@@ -138,8 +138,6 @@ public class Audio {
     }
 
 
-    int end;
-
     /// <summary>
     /// Stop playing the audio
     /// </summary>
