@@ -42,6 +42,7 @@ namespace HeroKeyboardGuitar {
                     Game.SetCurSong(filePath, genre);
                     FrmMain frmMain = new();
                     frmMain.Show();
+
                 };
                 Controls.Add(btnSong);
             }

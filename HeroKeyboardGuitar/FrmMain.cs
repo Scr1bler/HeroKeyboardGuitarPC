@@ -93,7 +93,7 @@ internal partial class FrmMain : Form
                 score.Miss();
             }
         }
-        if (index >= curSong.GetNumberOfSamples() - 1)
+        if (index == curSong.GetNumberOfSamples() - 1)
         {
             tmrPlay.Enabled = false;
             foreach (var note in notes)
@@ -101,8 +101,10 @@ internal partial class FrmMain : Form
                 Controls.Remove(note.Pic);
                 note.Dispose();
                 disposed += 1;
-                win();
+                //win();
             }
+            //MessageBox.Show("win");
+            win();
         }
     }
 
@@ -168,25 +170,33 @@ internal partial class FrmMain : Form
     //private Audio curSong;
     public void win()
     {
-        FrmMain dispose = new FrmMain();
-        curSong = Game.GetInstance().CurSong;
-        Console.WriteLine(curSong.GetNumberOfSamples());
-        Console.WriteLine(dispose.disposed);
-        if (curSong.GetNumberOfSamples() == disposed)
-        {
-            Console.WriteLine(curSong.GetNumberOfSamples());
-            WinScreen winScreen = new WinScreen();
-            winScreen.Show();
-        }
-    }
-
-    private void button1_Click(object sender, EventArgs e)
-    {
+        //FrmMain dispose = new FrmMain();
+        //curSong = Game.GetInstance().CurSong;
         WinScreen winScreen = new WinScreen();
         winScreen.Show();
     }
 
+    public void CheckFail()
+    {
+        curSong = Game.GetInstance().CurSong;
+        if (Note.misses == 5)
+        {
+            Game.GetInstance().CurSong.Stop();
+        }
+    }
+
+    //private void button1_Click(object sender, EventArgs e)
+    //{
+    //    WinScreen winScreen = new WinScreen();
+    //    winScreen.Show();
+    //}
+
     private void lblScore_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void textBox1_TextChanged(object sender, EventArgs e)
     {
 
     }

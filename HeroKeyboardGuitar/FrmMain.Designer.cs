@@ -25,7 +25,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            button1 = new System.Windows.Forms.Button();
             tmrPlay = new System.Windows.Forms.Timer(components);
             picTarget = new System.Windows.Forms.PictureBox();
             lblScore = new System.Windows.Forms.Label();
@@ -34,32 +33,6 @@
             ((System.ComponentModel.ISupportInitialize)picTarget).BeginInit();
             panBg.SuspendLayout();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            //button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            //button1.BackColor = System.Drawing.Color.IndianRed;
-            //button1.Cursor = System.Windows.Forms.Cursors.Cross;
-            //button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            //button1.Location = new System.Drawing.Point(78, 496);
-            //button1.Name = "button1";
-            //button1.Size = new System.Drawing.Size(206, 122);
-            //button1.TabIndex = 6;
-            //button1.Text = "button1";
-            //button1.UseVisualStyleBackColor = false;
-
-            button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            button1.BackColor = System.Drawing.Color.FromArgb(192, 255, 255);
-            button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            button1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            button1.ForeColor = System.Drawing.Color.Black;
-            button1.Location = new System.Drawing.Point(468, 476);
-            button1.Name = "btnStart";
-            button1.Size = new System.Drawing.Size(339, 90);
-            button1.TabIndex = 0;
-            button1.Text = "Start";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // tmrPlay
             // 
@@ -110,12 +83,11 @@
             // 
             // FrmMain
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Black;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             ClientSize = new System.Drawing.Size(1237, 644);
-            Controls.Add(button1);
             Controls.Add(panBg);
             Controls.Add(picTarget);
             Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -138,6 +110,6 @@
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Timer tmrScoreShrink;
         private System.Windows.Forms.Panel panBg;
-        private System.Windows.Forms.Button button1;
+        //private System.Windows.Forms.Button button1;
     }
 }

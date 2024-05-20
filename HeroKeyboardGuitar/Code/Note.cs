@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using AudioAnalyzing;
 using System;
+using Microsoft.VisualBasic.Devices;
 
 namespace HeroKeyboardGuitar;
 
@@ -115,7 +116,6 @@ public class Note {
             Pic.BackgroundImage = Resources.marker_miss;
             State = NoteState.MISS;
             misses += 1;
-            Console.WriteLine(misses);
             return true;
         }
         else {
@@ -123,12 +123,9 @@ public class Note {
         }
     }
 
-    public void CheckFail()
+    public void AddMiss()
     {
-        if (misses > 5)
-        {
-
-        }
+        misses += 1;
     }
 
     //public void Win()

@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace HeroKeyboardGuitar
+﻿namespace HeroKeyboardGuitar
 {
-    partial class WinScreen
+    partial class FailScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -32,22 +30,16 @@ namespace HeroKeyboardGuitar
         {
             SuspendLayout();
             // 
-            // WinScreen
+            // FailScreen
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.WinImage;
-            ClientSize = new System.Drawing.Size(555, 305);
-            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            Name = "WinScreen";
+            BackgroundImage = Properties.Resources.GameOver;
+            ClientSize = new System.Drawing.Size(563, 308);
+            Name = "FailScreen";
             Text = "Form1";
             ResumeLayout(false);
         }
-
-        //private void WinScreen_Load(object sender, EventArgs e)
-        //{
-        //S
-        //}
 
         #endregion
     }

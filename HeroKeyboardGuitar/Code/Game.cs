@@ -43,10 +43,10 @@ public class Game {
         return instance;
     }
 
-    public static Game GetNothing()
-    {
+    //public static Game GetNothing()
+    //{
 
-    }
+    //}
 
     /// <summary>
     /// Retrieves the map of rewards for scores or streaks.

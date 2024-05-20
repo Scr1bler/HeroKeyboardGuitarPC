@@ -43,8 +43,21 @@ public class Score {
     /// <summary>
     /// Resets streak back to 0
     /// </summary>
+    /// 
+    int misses = 0;
     public void Miss() {
+        misses += 1;
+        CheckFailure();
         Streak = 0;
 
     }
+
+    public void CheckFailure()
+    {
+        if (misses == 5)
+        {
+
+        }
+    }
+
 }
